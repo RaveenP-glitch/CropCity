@@ -31,6 +31,18 @@ part_label.grid(row=0, column=2, sticky=W)
 part_entry = Entry(app, textvariable=part_text, width=46)
 part_entry.grid(row=0, column=3)
 
+#Parts List (Listbox)
+parts_list = Listbox(app, height=10, width=110)
+parts_list.grid(row=3, column=0, columnspan=3, rowspan=6, pady=20, padx=10)
+#Create scrollbar
+scrollbar = Scrollbar(app)
+scrollbar.grid(row=3, column=6)
+#Set scroll to listbox
+parts_list.configure(yscrollcommand=scrollbar.set)
+scrollbar.configure(command=parts_list.yview)
+
+#Buttons
+# add_btn = Button(app, text='Add Part', width=12, command=add_item)
 
 app.title("Part Manager")
 app.geometry('900x500')
