@@ -1,0 +1,215 @@
+/* 
+    Author: T.R. Panditha;
+    Theme: CropCity food-order;
+    version: 1.0;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+
+
+}
+
+.text-center{
+    text-align: center;
+
+}
+
+
+/* CSS for menu */
+
+.menu{
+    text-align: center;
+    border-bottom: 2px solid rgb(206, 206, 206);
+
+}
+
+.menu ul{
+    list-style-type: none;
+    
+
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #69b812;
+    font-size: larger;
+    padding: 15px 15px;
+}
+
+
+.menu ul li a:hover{
+    color: #2a4b08;
+
+}
+
+.menu ul li a:active{
+    top: 2px;
+    color: #69b812;
+   
+}
+
+/* CSS for main content */
+
+.main-content{
+    margin: 2% 4%;
+    border-radius: 15px;
+    background-color: rgb(241, 239, 239);
+    padding: 2% 0;
+    
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+
+}
+
+.tbl-full{
+    width: 100%;
+
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align:  center;
+    font-weight: bolder;
+
+}
+
+table tr td{
+    padding: 1%;
+}
+
+.add-admin{
+    background-color:#69B812;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 0px;
+    margin-right: 15px;
+
+}
+
+.add-admin:hover{
+    background-color: #4a830d;
+}
+
+.update-admin{
+    background-color:#f1c40f;
+    padding: 6px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 0px;
+    margin-right: 15px;
+
+}
+
+.update-admin:hover{
+    background-color: #cfac1d;
+}
+
+.del-admin{
+    background-color:#c0392b;
+    padding: 6px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 0px;
+    margin-right: 15px;
+
+}
+
+.del-admin:hover{
+    background-color: #962d21;
+}
+
+
+.col-4{
+    width: 15%;
+    background-color: white;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    padding: 2%;
+    float: left;
+
+
+}
+
+.tbl-30{
+    width: 30%;
+
+}
+
+
+.success{
+    color:#4a830d
+
+}
+
+.error{
+    color: #ff4757;
+
+}
+
+.btn-primary{
+    background-color:#4e64df;
+    padding: 6px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 0px;
+    margin-right: 15px;
+
+}
+
+.btn-primary:hover{
+    background-color: #344bca;
+}
+
+
+
+/* CSS for footer */
+.footer{
+    background-color: #69b812;
+    color: white;
+    line-height: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+
+}
+
+
+.login{
+    border: 1px solid grey;
+    width: 30%;
+    margin: 10% auto;
+    padding: 2%;
+    
+
+}
+
