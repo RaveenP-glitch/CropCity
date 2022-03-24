@@ -17,13 +17,39 @@
             unset($_SESSION['add']);
         }
 
+        if(isset($_SESSION['delete'])){
+            echo $_SESSION['delete'];
+            unset($_SESSION['delete']);
+        }
+
+        if(isset($_SESSION['upload'])){
+            echo $_SESSION['upload'];
+            unset($_SESSION['upload']);
+        }
+      
+        if(isset($_SESSION['unauthorized'])){
+            echo $_SESSION['unauthorized'];
+            unset($_SESSION['unauthorized']);
+        }
+      
+        if(isset($_SESSION['update'])){
+            echo $_SESSION['update'];
+            unset($_SESSION['update']);
+        }
+       
+        if(isset($_SESSION['remove-failed'])){
+            echo $_SESSION['remove-failed'];
+            unset($_SESSION['remove-failed']);
+        }
+      
+      
         ?>
 
         <table class="tbl-full text-center">
             <tr>
                 <th>S.N</th>
                 <th>Title</th>
-                <th>Price</th>
+                <th>Price (Rs.)</th>
                 <th>Image</th>
                 <th>Featured</th>
                 <th>Active</th>
@@ -78,8 +104,8 @@
                         <td><?php echo $featured; ?></th>
                         <td><?php echo $active; ?></th>
                         <td>
-                            <a href="#"><button class="update-admin">Update Item</button></a>
-                            <a href="#"><button class="del-admin">Delete Item</button></a>
+                            <a href="<?php echo SITEURL; ?>admin/update-item.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>"><button class="update-admin">Update Item</button></a>
+                            <a href="<?php echo SITEURL; ?>admin/delete-item.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>"><button class="del-admin">Delete Item</button></a>
                         </td>
                     </tr>
 

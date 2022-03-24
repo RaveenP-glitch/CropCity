@@ -93,8 +93,9 @@ fieldset{
 /* CSS for navbar section */
 
 .logo{
-    width: 10%;
+    width: 15%;
     float: left;
+    padding-top: 5px;
 }
 .menu{
     line-height: 50px;
@@ -102,11 +103,13 @@ fieldset{
 }
 .menu ul{
     list-style-type: none;
+    
 }
 
 .menu ul li{
     display: inline;
     padding: 1%;
+    padding-right: 3%;
     font-weight: bold;
 }
 
@@ -114,7 +117,7 @@ fieldset{
 /* CSS for Food SEarch Section */
 
 .food-search{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/hero-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

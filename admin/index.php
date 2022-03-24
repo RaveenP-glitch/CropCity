@@ -40,8 +40,3 @@
             include('partials/footer.php');
         ?>
  
-
-<?php
-echo "Hello Admin";
-
-?>
